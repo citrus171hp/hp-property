@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hp的小屋 · 摄影 / 文章 / 小工具</title>
+  <meta name="description" content="hp的小屋：摄影作品、公众号文章与小工具集合，简约而有温度的个人空间。" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ===== 顶部导航（sticky） ===== -->
+  <header class="site-header">
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__brand" href="#top" id="brandName">hp的小屋</a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#photos" class="nav__link">摄影作品</a></li>
+        <li><a href="#plugins" class="nav__link">小插件</a></li>
+        <li><a href="#articles" class="nav__link">文章</a></li>
+        <li><a href="#about" class="nav__link">关于我</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="切换深色 / 浅色主题">
+            <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle__label">深色</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-label="简介">
+      <p class="hero__eyebrow" id="heroTitle">独立开发者 / 软件工程师</p>
+      <h1 class="hero__name" id="heroName">你好，我是 ——</h1>
+      <p class="hero__bio" id="heroBio">这里收集了我做过的软件、写过的小工具，以及平时在公众号上分享的一些思考。</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#photos">看看作品</a>
+        <a class="btn btn--ghost" href="#about">关于我</a>
+      </div>
+    </section>
+
+    <!-- ===== 摄影作品区（画廊 + 灯箱） ===== -->
+    <section class="section" id="photos" aria-labelledby="photosTitle">
+      <div class="section__head">
+        <h2 class="section__title" id="photosTitle">摄影作品</h2>
+        <p class="section__sub">记录光影、纹理与生活里的安静瞬间。点击任意照片可放大浏览。</p>
+      </div>
+
+      <div class="gallery" id="photosGrid" aria-live="polite"></div>
+    </section>
+
+    <!-- 灯箱（Lightbox） -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="照片预览" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="关闭预览">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="上一张">‹</button>
+      <div class="lightbox__stage">
+        <img id="lightboxImg" src="" alt="" />
+        <div class="lightbox__caption">
+          <strong id="lightboxTitle"></strong>
+          <p id="lightboxDesc"></p>
+        </div>
+      </div>
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="下一张">›</button>
+    </div>
+
+    <!-- ===== 公众号文章聚合（位于摄影作品下方） ===== -->
+    <section class="section" id="articles" aria-labelledby="articlesTitle">
+      <div class="section__head">
+        <h2 class="section__title" id="articlesTitle">公众号文章</h2>
+        <p class="section__sub">平时写的一些技术随笔，点击可跳转原文阅读。</p>
+      </div>
+      <ol class="timeline" id="articlesTimeline"></ol>
+    </section>
+
+    <!-- ===== 小插件区 ===== -->
+    <section class="section" id="plugins" aria-labelledby="pluginsTitle">
+      <div class="section__head">
+        <h2 class="section__title" id="pluginsTitle">小插件</h2>
+        <p class="section__sub">随手写的小工具，点开就能在线试用。</p>
+      </div>
+      <div class="grid" id="pluginsGrid"></div>
+    </section>
+
+    <!-- ===== 关于我 ===== -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="section__head">
+        <h2 class="section__title" id="aboutTitle">关于我</h2>
+      </div>
+      <div class="about" id="aboutCard"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p id="footerText">© <span id="year"></span> 个人作品集 · 用纯 HTML/CSS/JS 打造</p>
+  </footer>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

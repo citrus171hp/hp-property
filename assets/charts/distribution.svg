@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="680" height="380" fill="#ffffff"/>
+  <text x="40" y="36" font-size="19" font-weight="700" fill="#1f2933">本周 AI 热点方向分布（事件数）</text>
+  <text x="40" y="58" font-size="12" fill="#64748b">覆盖 2026-07-02 至 2026-07-09</text>
+
+  <!-- gridlines -->
+  <line x1="80" y1="320" x2="650" y2="320" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="80" y1="250" x2="650" y2="250" stroke="#eef2f6" stroke-width="1"/>
+  <line x1="80" y1="180" x2="650" y2="180" stroke="#eef2f6" stroke-width="1"/>
+  <line x1="80" y1="110" x2="650" y2="110" stroke="#eef2f6" stroke-width="1"/>
+  <text x="68" y="324" font-size="11" fill="#94a3b8" text-anchor="end">0</text>
+  <text x="68" y="254" font-size="11" fill="#94a3b8" text-anchor="end">1</text>
+  <text x="68" y="184" font-size="11" fill="#94a3b8" text-anchor="end">2</text>
+  <text x="68" y="114" font-size="11" fill="#94a3b8" text-anchor="end">3</text>
+
+  <!-- bars (unit = 70px) -->
+  <rect x="116" y="180" width="70" height="140" rx="6" fill="#14b8a6"/>
+  <rect x="258" y="180" width="70" height="140" rx="6" fill="#3b82f6"/>
+  <rect x="400" y="110" width="70" height="210" rx="6" fill="#f59e0b"/>
+  <rect x="542" y="250" width="70" height="70" rx="6" fill="#8b5cf6"/>
+
+  <!-- values -->
+  <text x="151" y="170" font-size="15" font-weight="700" fill="#0f766e" text-anchor="middle">2</text>
+  <text x="293" y="170" font-size="15" font-weight="700" fill="#1d4ed8" text-anchor="middle">2</text>
+  <text x="435" y="100" font-size="15" font-weight="700" fill="#b45309" text-anchor="middle">3</text>
+  <text x="577" y="240" font-size="15" font-weight="700" fill="#6d28d9" text-anchor="middle">1</text>
+
+  <!-- category labels -->
+  <text x="151" y="342" font-size="12" fill="#334155" text-anchor="middle">大模型/LLM</text>
+  <text x="293" y="342" font-size="12" fill="#334155" text-anchor="middle">AI产品&amp;公司</text>
+  <text x="435" y="342" font-size="12" fill="#334155" text-anchor="middle">融资/商业化</text>
+  <text x="577" y="342" font-size="12" fill="#334155" text-anchor="middle">开源&amp;技术</text>
+</svg>
