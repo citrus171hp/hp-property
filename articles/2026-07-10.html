@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>光收发模块行业周报 ｜ 2026.07.01–07.10</title>
+  <meta name="description" content="光收发模块行业周报：AI 算力基建驱动需求高景气，板块高位震荡、估值分化加剧，半年报成关键观测窗口。" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- 与站点一致的主题：读取已保存偏好，否则跟随系统 -->
+  <script>
+    (function () {
+      var m = null;
+      try { m = localStorage.getItem("theme"); } catch (e) {}
+      if (!m) m = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", m);
+    })();
+
+    // 缺图兜底（与站点 app.js 中一致），让本页也能优雅降级
+    window.imgFallback = function (img) {
+      img.onerror = null;
+      var text = img.getAttribute("data-ph") || "图片待补";
+      var e = String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      var svg = "<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'>" +
+        "<defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>" +
+        "<stop offset='0' stop-color='#e9eef5'/><stop offset='1' stop-color='#cfd8e6'/></linearGradient></defs>" +
+        "<rect width='100%' height='100%' fill='url(#g)'/>" +
+        "<text x='50%' y='50%' font-family='sans-serif' font-size='22' fill='#8a94a6' " +
+        "text-anchor='middle' dominant-baseline='middle'>" + e + "</text></svg>";
+      img.src = "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+      img.classList.add("img-ph");
+    };
+  </script>
+
+  <style>
+    .article-wrap { max-width: 820px; margin: 0 auto; padding: 20px 18px 72px; }
+    .article__back { display: inline-flex; margin: 16px 0 22px; }
+
+    .article h1 { font-size: clamp(26px, 5vw, 38px); font-weight: 700; line-height: 1.25; margin: 0 0 16px; }
+    .article .lead {
+      border-left: 4px solid var(--primary);
+      background: var(--surface-2);
+      padding: 14px 16px; border-radius: 0 10px 10px 0;
+      margin: 0 0 28px; color: var(--muted); font-size: 15px;
+    }
+    .article .lead strong { color: var(--text); }
+    .article h2 {
+      font-size: clamp(20px, 3.4vw, 26px); font-weight: 700;
+      margin: 40px 0 14px; padding-top: 14px; border-top: 1px solid var(--border);
+    }
+    .article h3 { font-size: 17px; font-weight: 650; margin: 26px 0 8px; color: var(--text); }
+    .article p { margin: 0 0 14px; line-height: 1.78; }
+    .article ul { margin: 0 0 18px; padding-left: 22px; }
+    .article li { margin: 0 0 10px; line-height: 1.72; }
+    .article figure { margin: 24px 0; }
+    .article figure img {
+      width: 100%; border: 1px solid var(--border); border-radius: 12px;
+      background: var(--surface); display: block;
+    }
+    .article figcaption { font-size: 13px; color: var(--muted); text-align: center; margin-top: 8px; }
+    .article .foot {
+      margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--border);
+      font-size: 13px; color: var(--muted); line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="文章导航">
+      <a class="nav__brand" href="../index.html">hp的小屋</a>
+      <a class="btn btn--ghost btn--sm" href="../index.html#articles">← 返回作品集</a>
+    </nav>
+  </header>
+
+  <main class="article-wrap">
+    <article class="article">
+      <h1>光收发模块行业周报 ｜ 2026年7月1日–7月10日</h1>
+
+      <blockquote class="lead">
+        <strong>本期关键词：高景气 · 高波动 · 高分化</strong><br />
+        AI 算力基建驱动需求高景气，板块高位震荡、估值分化加剧，半年报披露季成为验证产业链真实景气度的关键观测窗口。
+      </blockquote>
+
+      <figure>
+        <img src="../assets/charts/optics-forecast.svg" alt="光模块出货量预测" loading="lazy" data-ph="图表缺失" onerror="imgFallback(this)" />
+        <figcaption>光模块出货量预测（万只）：800G 持续放量，1.6T 于 2027 年规模上量</figcaption>
+      </figure>
+
+      <h2>一、市场动态</h2>
+
+      <h3>🔹 行业重大事件</h3>
+      <ul>
+        <li><strong>7月3日｜鹏鼎控股定增 96 亿元</strong>：拟募资用于江苏淮安庆鼎「AI 服务器及高速光模块高密度互连积层板（HDI）项目」，项目计划总投资 127.3 亿元，标志上游 PCB 环节加速向高速光模块配套扩产。</li>
+        <li><strong>7月6日｜爱建证券设备行业点评</strong>：指出「光模块 PCB 扩产潮起，PCB 设备持续景气」，间接印证光模块产业链资本开支持续加码。</li>
+        <li><strong>7月7日｜光库科技半年报预告</strong>：预计上半年归母净利润 1.40–1.50 亿元，同比增长 170%–190%，延续 2025 年以来高增长，高速光器件需求放量兑现。</li>
+        <li><strong>7月7日｜光迅科技启动 H 股上市筹备</strong>：授权管理层启动 H 股发行并于港交所上市筹备（有效期 12 个月），深化全球化战略、拓宽融资渠道；公司 2025 年营收突破 119 亿元，2026Q1 净利劲增约 60%。</li>
+      </ul>
+
+      <h3>🔹 主要厂商动向</h3>
+      <ul>
+        <li><strong>光迅科技</strong>：H 股上市筹备 + AI 算力光模块放量，7月9日触及涨停（详见资本市场部分）。</li>
+        <li><strong>光库科技</strong>：受益 AI 算力与数据中心建设，持续推出新品、拓展国内外新客户，业绩持续兑现。</li>
+        <li><strong>鹏鼎控股 / 兴森科技</strong>：从 PCB/基板环节切入光模块配套，兴森科技拟定增 39 亿元（其中 20 亿投向珠海高阶 mSAP 基板），北京兴斐 1.6T 光模块产品板处于量产爬坡、同步多客户验证导入。</li>
+        <li><strong>中际旭创、新易盛、天孚通信（「易中天」）</strong>：仍为板块核心权重标的，但 7 月资金面出现大幅分歧（详见资本市场部分）。</li>
+      </ul>
+
+      <h3>🔹 市场需求变化</h3>
+      <ul>
+        <li><strong>需求主线</strong>：全球 AI 算力基础设施投资加速 + 数据中心建设，高速光模块及光器件市场需求持续增长。</li>
+        <li><strong>迭代窗口开启</strong>：随着 GB300、NVL144 标准落地及超大规模 AI Factory 相继投产，全球数据中心网络开启新一轮「800G → 1.6T」扩容周期。</li>
+        <li><strong>出货预测（专家纪要）</strong>：2026 年 800G 光模块出货量预计约 4,500 万只，1.6T 冲击 1,500–1,800 万只；2027 年 800G 逼近 6,000 万只，1.6T 直指 4,500–5,000 万只。</li>
+      </ul>
+
+      <h3>🔹 竞争格局</h3>
+      <ul>
+        <li><strong>高度集中</strong>：行业专家纪要显示，头部三大巨头（中际旭创、新易盛、天孚通信）合计瓜分约 90% 市场份额。</li>
+        <li><strong>龙头地位</strong>：中际旭创 800G 全球份额约 40%，其 800G 硅光模块市占率居全球第一（约 50%）。</li>
+        <li><strong>路线之争</strong>：可插拔光模块（维护方便、成本低、故障率低，Roadmap 可至 3.2T/6.4T/12.8T）与 CPO（共封装光学）并行演进，短期可插拔仍为主力，CPO 处于卡位与标准制定期。</li>
+      </ul>
+
+      <h2>二、技术动态</h2>
+
+      <h3>🔹 新技术 / 产品发布</h3>
+      <ul>
+        <li><strong>华为发布全球首个单波速率 1.6Tbps 硅光模块</strong>：采用第三代硅光子集成技术，体积缩减约 70%，功耗降低约 40%，代表硅光集成代际跃升。</li>
+        <li><strong>京瓷（Kyocera）ECTC 2026 成果</strong>：发布集成硅光子学与聚合物波导的宽温域 CPO 光耦合结构，实现 0–70℃ 全温域单通道 32Gb/s（等效 PCIe 5.0）无误码传输，为下一代高性能计算与数据中心提供可行 CPO 方案。</li>
+      </ul>
+
+      <h3>🔹 研发进展</h3>
+      <ul>
+        <li><strong>中际旭创 1.6T 进度</strong>：1.6T 光模块海外重点客户已进入送样测试环节，预计下半年完成认证并进入客户下单，明年规模上量；国内需求目前主要体现于 400G。</li>
+        <li><strong>中际旭创 CPO 卡位</strong>：全球首发 1.6T CPO 引擎，集成度达 8Tbps/in²，采用 3D 异构封装，将光引擎与交换芯片（如博通 Tomahawk 5）互联距离缩短至 5mm，信号损耗降低 60%。</li>
+        <li><strong>源杰科技 CW 光源</strong>：被市场视为光模块链「种子股」——「全球唯三、大陆唯一」的孤本级期权，受益于 1.6T/硅光渗透率提升对 CW 激光器需求拉动。</li>
+      </ul>
+
+      <h3>🔹 技术标准更新</h3>
+      <ul>
+        <li><strong>OIF（光互联论坛）</strong>：中际旭创主导《CPO Implementation Agreement》技术规范制定，持有相干光通信专利超 300 件（较第二名 Lumentum 多约 40%），在标准话语权上领先。</li>
+        <li><strong>互连标准落地</strong>：GB300、NVL144 等整机/互连标准相继落地，为 800G→1.6T 升级提供系统级支撑。</li>
+      </ul>
+
+      <h3>🔹 产品迭代情况</h3>
+      <ul>
+        <li><strong>速率升级</strong>：行业正式迈入「800G 向 1.6T 升级」关键期，1.6T 从送样走向认证、量产爬坡。</li>
+        <li><strong>形态演进</strong>：可插拔持续迭代（3.2T/6.4T/12.8T Roadmap）与 CPO 共封装并行，硅光渗透率提升成为降本增效核心路径。</li>
+        <li><strong>上游配套</strong>：高阶 mSAP 基板、高速光模块 HDI 板扩产，支撑下一代产品规模交付。</li>
+      </ul>
+
+      <h2>三、资本市场动态</h2>
+
+      <h3>🔹 股价表现</h3>
+      <ul>
+        <li><strong>7月6日｜「易中天」遭大幅净流出</strong>：中际旭创净流出 26.47 亿元、新易盛 15.08 亿元、天孚通信 13.98 亿元，合计约 55 亿元单日撤离；当日中际旭创跌 1.53%、天孚通信跌 5.24%、新易盛跌 3.63%。</li>
+        <li><strong>高位回撤</strong>：近 10 个交易日中际旭创主力净流出高达 221.1 亿元，11 个交易日市值蒸发约 3,500 亿元，反映机构从高位 AI 硬件链获利了结。</li>
+        <li><strong>7月8日｜板块剧烈博弈</strong>：早盘「易中天」高开走高（盘中最高涨幅 5.12% / 4.56% / 3.73%），午后突发直线杀跌，但最终中际旭创当日反涨约 7%，呈现典型「深 V」分歧走势。</li>
+        <li><strong>7月9日｜光迅科技涨停</strong>：涨停价 238.49 元（+10%），总市值 1,973.66 亿元，成交额 104.24 亿元（催化：AI 算力光模块 + 定增募资 + 产品技术领先）；同日兴森科技涨停（定增扩产 + mSAP 基板 + 1.6T 光模块）。</li>
+      </ul>
+
+      <h3>🔹 投融资 / 定增</h3>
+      <ul>
+        <li><strong>鹏鼎控股</strong>：拟定增不超过 96 亿元，加码 AI 服务器及高速光模块 HDI 板。</li>
+        <li><strong>兴森科技</strong>：拟定增不超过 39 亿元，其中 20 亿元投向珠海高阶 mSAP 基板智能制造及产业化一期，扩大光模块基板产能。</li>
+        <li><strong>光迅科技</strong>：启动 H 股发行上市筹备，拓宽海外融资渠道。</li>
+      </ul>
+
+      <h3>🔹 并购消息</h3>
+      <ul>
+        <li>本周公开渠道未披露光模块主链重大并购事件；产业资本动作以「定增扩产 + 跨界配套」为主（PCB/基板企业向上游光模块配套延伸），机器人等半导体跨界收购多发生于相邻板块，非光模块核心标的。</li>
+      </ul>
+
+      <h3>🔹 分析师观点</h3>
+      <ul>
+        <li><strong>整体研判</strong>：进入 7 月，AI 板块迎来深度回调，光模块、先进封装、MLCC 等核心赛道龙头普遍回撤 15%–30%，「泡沫论」「见顶论」抬头；但多数机构认为半年报披露季才是验证产业链真实景气度的关键窗口。</li>
+        <li><strong>估值分化</strong>：光模块链标的 TTM PE——源杰科技 265 倍、天孚通信 122.6 倍、中际旭创 81.89 倍、新易盛 65.81 倍；按 2026E 动态 PE——中际约 41 倍、新易盛 29–38 倍，估值消化压力与业绩兑现预期并行。</li>
+        <li><strong>主线判断</strong>：方正证券维持「2026 通信板块以 AI 算力主线为核心」，看好光通信、IT 设备、电源、液冷等结构性机会；部分观点认为资金正从「GPU+光模块+服务器」硬件组合，向承载算力生产的 AIDC（人工智能智算中心）主线迁移。</li>
+        <li><strong>关键观测</strong>：中际旭创 7月7日收盘总市值约 12,511.82 亿元（PE TTM 83.70 倍），机构一致预期其 800G/1.6T 量价共振，但高估值需持续超预期的业绩消化。</li>
+      </ul>
+
+      <h2>四、总结与展望</h2>
+      <p><strong>本周核心判断</strong>：光收发模块行业处于「需求高景气、股价高波动、估值高分化」的三高状态。产业基本面（AI 算力基建 + 800G/1.6T 迭代）确定性仍强，但资本市场在半年末机构获利了结、海外算力开支预期扰动下出现显著分歧，板块呈现高位震荡、资金大进大出特征。</p>
+      <ul>
+        <li><strong>短期（1–2 个月）</strong>：半年报披露季是核心观测窗口，业绩能否兑现高增预期将决定估值能否企稳；板块或延续高波动，需警惕高位回撤与资金跷跷板效应（向 AIDC 等低位主线迁移）。</li>
+        <li><strong>中期（半年维度）</strong>：需求端 800G 持续放量、1.6T 于 2027 年规模上量，出货预测支撑景气延续；技术端硅光渗透率提升、CPO 从标准走向商用，头部厂商凭借专利与份额构筑壁垒；格局端三大巨头约 90% 份额集中度高，但上游 PCB/基板、CW 光源等环节涌现新进入者与配套机会。</li>
+        <li><strong>主要风险</strong>：① 估值处于历史高位，若业绩不及预期将放大回调；② 海外超大规模客户资本开支预期扰动；③ CPO 替代节奏超预期，冲击可插拔主力产品出货；④ 地缘政治与贸易政策对供应链及出口的影响。</li>
+      </ul>
+
+      <p class="foot">本周报覆盖 2026-07-01 至 2026-07-10 公开报道，数据来源包括公开财经媒体、券商研报、公司公告及行业专家纪要（检索日期 2026-07-10）。本报告为行业信息汇编，不构成投资建议。内容由 Content Creator 整理。</p>
+    </article>
+  </main>
+</body>
+</html>
